@@ -4,6 +4,7 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 @Entity()
 // where we will code the typeorm entity for the users table
 export class Users extends BaseEntity {
+  // PrimaryGeneratedColumn() decorator tells typeorm that this is the primary key
   @PrimaryGeneratedColumn()
   id!: number;
 
